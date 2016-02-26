@@ -110,7 +110,7 @@ if (Meteor.isClient) {
           if (error) {
             console.log(error.reason)
           } else {
-            Reouter.go('listPage', { _id: results });
+            Router.go('listPage', { _id: results });
             $('[name=listName]').val('');
           }
         });
