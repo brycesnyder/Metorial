@@ -1,0 +1,10 @@
+<body>
+  {{> companies}}
+</body>
+
+<template name="companies">
+  {{> export}}
+  {{#each companies}}
+    <h4>{{company}}</h4>
+  {{/each}}
+</template>

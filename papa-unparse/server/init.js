@@ -1,6 +1,5 @@
-
 Meteor.startup(function() {
-  if ( Contacts.find().count() === 0 ) {
+  if (Contacts.find().count() === 0 ) {
     Contacts.insert({
         name: "Rafael",
         gender: "Male",

@@ -36,7 +36,7 @@ Lists = new Meteor.Collection('lists');
 if (Meteor.isClient) {
 
   Template.todos.helpers({
-    'todo': function(){
+    'todo': function() {
       var currentList = this._id;
       var currentUser = Meteor.userId();
       return Todos.find({
@@ -248,13 +248,13 @@ if (Meteor.isServer) {
     'createNewList': function(listName) {
       var currentUser = Meteor.userId();
       check(listName, String);
-      if (listName == "") {
+      if (listName === "") {
         listName = defaultName(currentUser);
       }
       var data = {
         name: listName,
         createdBy: currentUser
-      }
+      };
       if (!currentUser) {
         throw new Meteor.Error("not-logged-in", "You're not logged-in");
       }
@@ -270,7 +270,7 @@ if (Meteor.isServer) {
         createdAt: new Date(),
         createdBy: currentUser,
         listId: currentList
-      }
+      };
       if(!currentUser){
         throw new Meteor.Error("not-logged-in", "You're not logged-in.");
       }

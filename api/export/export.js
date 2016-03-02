@@ -1,7 +1,7 @@
-MyAppExporter = {
-  exportAllContacts: function() {
+Export = {
+  allCompanies: function() {
     var self = this;
-    Meteor.call('exportAllContacts', function(error, data) {
+    Meteor.call('exportAllCompanies', function(error, data) {
       if (error) {
         alert(error);
         return false;
@@ -10,9 +10,9 @@ MyAppExporter = {
       self._downloadCSV(csv);
     });
   },
-  exportContact: function(id) {
+  exportCompany: function(id) {
     var self = this;
-    Meteor.call('exportContact', id, function(error, data) {
+    Meteor.call('exportCompany', id, function(error, data) {
       if (error) {
         alert(error);
         return false;
@@ -25,9 +25,9 @@ MyAppExporter = {
     var blob = new Blob([csv]);
     var a = window.document.createElement('a');
     a.href = window.URL.createObjectURL(blob, { type: "text/plain" });
-    a.download = "contacts.csv";
+    a.download = "companies.csv";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
   }
-}
+};
