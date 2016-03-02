@@ -1,10 +1,6 @@
 <body>
-  {{> companies}}
+  <div class="container">
+    {{> export}}
+    {{> companies}}
+  </div><!-- /.container -->
 </body>
-
-<template name="companies">
-  {{> export}}
-  {{#each companies}}
-    <h4>{{company}}</h4>
-  {{/each}}
-</template>
