@@ -22,3 +22,5 @@ mikowals:batch-insert
 twbs:bootstrap
 harrison:papa-parse
 momentjs:moment
+kadira:flow-router
+kadira:blaze-layout

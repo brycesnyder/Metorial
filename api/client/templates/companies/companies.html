@@ -1,57 +1,72 @@
 <template name="companies">
-  <table class="table table-hover table-bordered panel-body">
+  <div class="form-group">
+    {{> export}}
+  </div>
+  <h3>Company Directory</h3>
+  <table class="table table-hover table-bordered table-condensed panel-body">
     <thead>
       <tr>
-        <th>Company Name</th>
+        <th>Name</th>
       </tr>
     </thead>
     <tbody>
       {{#each companies}}
-        {{> company}}
+        <tr class="company">
+          <td>{{name}}</td>
+        </tr>
       {{/each}}
     </tbody>
   </table>
 </template>
 
-<template name="company">
-  <tr class="company">
-    <td>{{company}}</td>
-  </tr>
-</template>
-
 <template name="companyInfo">
-  <a href="#" class="back">Back</a>
+  {{> export}}
+  <a href="/" class="back">Back</a>
   <h2>Company Info</h2>
-  <table class="table table-bordered table-striped">
-    <tbody>
-      <tr>
-        <th>Company Name</th>
-        <td>{{company}}</td>
-      </tr>
-      <tr>
-        <th>Address</th>
-        <td>{{address_line_1}} {{address_line_2}} <br> {{city}}, {{province}} {{postal_code}}<br> {{country}}</td>
-      </tr>
-      <tr>
-        <th>Contact Name</th>
-        <td>{{contact_name}}</td>
-      </tr>
-      <tr>
-        <th>Email</th>
-        <td>{{contact_email}}</td>
-      </tr>
-      <tr>
-        <th>Phone</th>
-        <td>{{contact_phone}}</td>
-      </tr>
-      <tr>
-        <th>SCUTE ID</th>
-        <td>{{scute_id}}</td>
-      </tr>
-      <tr>
-        <th>Distributor ID</th>
-        <td>{{distributor_id}}</td>
-      </tr>
-    </tbody>
-  </table>
+  {{#if Template.subscriptionsReady}}
+    <table class="table table-bordered table-striped">
+      <tbody>
+        {{#with company}}
+          <tr>
+            <th>Company Name</th>
+            <td>{{name}}</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>{{addressLine1}} {{addressLine2}} <br> {{city}}, {{province}} {{postalCode}}<br> {{country}}</td>
+          </tr>
+          <tr>
+            <th>Contact Name</th>
+            <td>{{contactName}}</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>{{contactEmail}}</td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>{{contactPhone}}</td>
+          </tr>
+          <tr>
+            <th>Token</th>
+            <td>{{token}}</td>
+          </tr>
+          <tr>
+            <th>Active</th>
+            <td>{{active}}</td>
+          </tr>
+          <tr>
+            <th>Activation Date</th>
+            <td>{{registeredAt}}</td>
+          </tr>
+          <!-- <tr>
+            <th>Distributor ID</th>
+            <td>{{distributor_id}}</td>
+          </tr> -->
+        {{/with}}
+      </tbody>
+    </table>
+  {{else}}
+    <p>Loading...</p>
+  {{/if}}
 </template>

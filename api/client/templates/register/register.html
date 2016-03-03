@@ -1,0 +1,65 @@
+<template name="register">
+  {{> registerForm}}
+</template>
+
+<template name="registerForm">
+  <div class="panel panel-default">
+    <form class="register panel-body">
+      <legend>Company Info</legend>
+      <div class="form-group">
+        <label for="company-name">Name</label>
+        <input type="text" name="company-name" id="company-name" class="form-control" required>
+      </div><!-- /.form-group -->
+      <div class="form-group row">
+        <div class="col-sm-8">
+          <label for="address-line-1">Address Line 1</label>
+          <input type="text" name="address-line-1" id="address-line-1" class="form-control" placeholder="Street address, P.O box, company name, c/o" required>
+        </div><!-- /.col -->
+        <div class="col-sm-4">
+          <label for="address-line-2">Address Line 2</label>
+          <input type="text" name="address-line-2" id="address-line-2" class="form-control" placeholder="Apartment, suite, etc.">
+        </div><!-- /.col -->
+      </div><!-- /.form-group -->
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <label for="address-city">City / Town</label>
+          <input type="text" name="address-city" id="address-city" class="form-control" required>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <label for="address-province">State / Province / Region</label>
+          <input type="text" name="address-province" id="address-province" class="form-control" required>
+        </div><!-- /.col -->
+      </div><!-- /.form-group -->
+      <div class="form-group row">
+      <div class="col-sm-6">
+        <label for="address-postal-code">ZIP / Postal Code</label>
+        <input type="text" name="address-postal-code" id="address-postal-code" class="form-control" required>
+      </div><!-- /.col -->
+        <div class="col-sm-6">
+          <label for="address-country">Country</label>
+          <select class="form-control" name="address-country" id="address-country" required>
+            <option value="null">----</option>
+            <option value="canada">Canada</option>
+            <option value="china">China</option>
+          </select>
+        </div><!-- /.col -->
+      </div><!-- /.form-group -->
+      <legend>Contact Info</legend>
+      <div class="form-group">
+        <label for="contact-name">Name</label>
+        <input type="text" name="contact-name" id="contact-name" class="form-control" required>
+      </div><!-- /.form-group -->
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <label for="contact-email">Email</label>
+          <input type="email" name="contact-email" id="contact-email" class="form-control" required>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <label for="contact-phone">Phone</label>
+          <input type="phone" name="contact-phone" id="contact-phone" class="form-control" required>
+        </div><!-- /.col -->
+      </div><!-- /.form-group -->
+      <button type="submit" class="btn btn-primary pull-right">Submit</button>
+    </form>
+  </div><!-- /.panel -->
+</template>
