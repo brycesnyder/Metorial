@@ -6,23 +6,25 @@
   <table class="table table-hover table-bordered table-condensed panel-body">
     <thead>
       <tr>
-        <th>Name</th>
+        <th class="name">Name <span class="glyphicon glyphicon-chevron-up"></span></th>
+          <th>Token</th>
       </tr>
     </thead>
     <tbody>
       {{#each companies}}
         <tr class="company">
           <td>{{name}}</td>
+          <td>{{token}}</td>
         </tr>
       {{/each}}
     </tbody>
   </table>
 </template>
 
-<template name="companyInfo">
+<template name="company">
   {{> export}}
   <a href="/" class="back">Back</a>
-  <h2>Company Info</h2>
+  <h3>Company Info</h3>
   {{#if Template.subscriptionsReady}}
     <table class="table table-bordered table-striped">
       <tbody>
@@ -53,16 +55,20 @@
           </tr>
           <tr>
             <th>Active</th>
-            <td>{{active}}</td>
+            <td><span class="glyphicon glyphicon-{{state}}"></span></td>
           </tr>
           <tr>
             <th>Activation Date</th>
             <td>{{registeredAt}}</td>
           </tr>
-          <!-- <tr>
+          <tr>
+            <th>Renewal Date</th>
+            <td>{{renewalDate}}</td>
+          </tr>
+          <tr>
             <th>Distributor ID</th>
-            <td>{{distributor_id}}</td>
-          </tr> -->
+            <td>{{distributorId}}</td>
+          </tr>
         {{/with}}
       </tbody>
     </table>

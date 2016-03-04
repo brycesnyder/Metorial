@@ -3,63 +3,98 @@
 </template>
 
 <template name="registerForm">
-  <div class="panel panel-default">
-    <form class="register panel-body">
-      <legend>Company Info</legend>
-      <div class="form-group">
-        <label for="company-name">Name</label>
-        <input type="text" name="company-name" id="company-name" class="form-control" required>
-      </div><!-- /.form-group -->
-      <div class="form-group row">
-        <div class="col-sm-8">
-          <label for="address-line-1">Address Line 1</label>
-          <input type="text" name="address-line-1" id="address-line-1" class="form-control" placeholder="Street address, P.O box, company name, c/o" required>
-        </div><!-- /.col -->
-        <div class="col-sm-4">
-          <label for="address-line-2">Address Line 2</label>
-          <input type="text" name="address-line-2" id="address-line-2" class="form-control" placeholder="Apartment, suite, etc.">
-        </div><!-- /.col -->
-      </div><!-- /.form-group -->
-      <div class="form-group row">
+  {{#with company}}
+    <div class="panel panel-default">
+      <form class="register panel-body">
+        <legend>Company Info</legend>
+        <div class="form-group">
+          <label for="name" class="control-label">Name</label>
+          <input type="text" name="name" id="name" class="form-control" value="{{name}}" required />
+        </div><!-- /.form-group -->
+        <div class="form-group row">
+          <div class="col-sm-8">
+            <label for="addressLine1" class="control-label">Address Line 1</label>
+            <input type="text" name="addressLine1" id="addressLine1" class="form-control" placeholder="Street address, P.O box, company name, c/o" value="{{addressLine1}}" required />
+          </div><!-- /.col -->
+          <div class="col-sm-4">
+            <label for="addressLine2" class="control-label">Address Line 2</label>
+            <input type="text" name="addressLine2" id="addressLine2" class="form-control" placeholder="Apartment, suite, etc." value="{{addressLine2}}"/>
+          </div><!-- /.col -->
+        </div><!-- /.form-group -->
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <label for="city" class="control-label">City / Town</label>
+            <input type="text" name="city" id="city" class="form-control" value="{{city}}" required />
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <label for="province" class="control-label">State / Province / Region</label>
+            <input type="text" name="province" id="province" class="form-control" value="{{province}}" required />
+          </div><!-- /.col -->
+        </div><!-- /.form-group -->
+        <div class="form-group row">
         <div class="col-sm-6">
-          <label for="address-city">City / Town</label>
-          <input type="text" name="address-city" id="address-city" class="form-control" required>
+          <label for="postalCode" class="control-label">ZIP / Postal Code</label>
+          <input type="text" name="postalCode" id="postalCode" class="form-control" value="{{postalCode}}" required />
         </div><!-- /.col -->
-        <div class="col-sm-6">
-          <label for="address-province">State / Province / Region</label>
-          <input type="text" name="address-province" id="address-province" class="form-control" required>
-        </div><!-- /.col -->
-      </div><!-- /.form-group -->
-      <div class="form-group row">
-      <div class="col-sm-6">
-        <label for="address-postal-code">ZIP / Postal Code</label>
-        <input type="text" name="address-postal-code" id="address-postal-code" class="form-control" required>
-      </div><!-- /.col -->
-        <div class="col-sm-6">
-          <label for="address-country">Country</label>
-          <select class="form-control" name="address-country" id="address-country" required>
-            <option value="null">----</option>
-            <option value="canada">Canada</option>
-            <option value="china">China</option>
-          </select>
-        </div><!-- /.col -->
-      </div><!-- /.form-group -->
-      <legend>Contact Info</legend>
-      <div class="form-group">
-        <label for="contact-name">Name</label>
-        <input type="text" name="contact-name" id="contact-name" class="form-control" required>
-      </div><!-- /.form-group -->
-      <div class="form-group row">
-        <div class="col-sm-6">
-          <label for="contact-email">Email</label>
-          <input type="email" name="contact-email" id="contact-email" class="form-control" required>
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <label for="contact-phone">Phone</label>
-          <input type="phone" name="contact-phone" id="contact-phone" class="form-control" required>
-        </div><!-- /.col -->
-      </div><!-- /.form-group -->
-      <button type="submit" class="btn btn-primary pull-right">Submit</button>
-    </form>
-  </div><!-- /.panel -->
+          <div class="col-sm-6">
+            <label for="country" class="control-label">Country</label>
+            <select class="form-control" name="country" id="country" value="{{country}}" required>
+              <option value="" selected disabled>---</option>
+              <option value="canada">Canada</option>
+              <option value="china">China</option>
+            </select>
+          </div><!-- /.col -->
+        </div><!-- /.form-group -->
+        <legend>Contact Info</legend>
+        <div class="form-group">
+          <label for="contactName" class="control-label">Name</label>
+          <input type="text" name="contactName" id="contactName" class="form-control" value="{{contactName}}" required />
+        </div><!-- /.form-group -->
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <label for="contactEmail" class="control-label">Email</label>
+            <input type="email" name="contactEmail" id="contactEmail" class="form-control" value="{{contactEmail}}" required />
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <label for="contactPhone" class="control-label">Phone</label>
+            <input type="phone" name="contactPhone" id="contactPhone" class="form-control" value="{{contactPhone}}" required />
+          </div><!-- /.col -->
+        </div><!-- /.form-group -->
+        <button type="submit" name="submit" class="btn btn-primary pull-right">Submit</button>
+      </form>
+    </div><!-- /.panel -->
+  {{/with}}
+  {{> terms}}
+</template>
+
+<template name="terms">
+  <div id="terms" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Terms &amp; Conditions</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut feugiat ex, id iaculis purus. Mauris et nisl nec leo ullamcorper consectetur eu ac ligula. Etiam vitae rutrum leo. Mauris cursus mattis arcu ut molestie. Pellentesque a felis hendrerit, vehicula lectus ut, convallis eros. Cras blandit in orci et euismod. Donec elementum auctor eros. Ut ut urna ac mauris facilisis varius. Nam eu tempus erat. Vivamus ut tempus nunc. Proin ut erat vulputate, tincidunt diam ac, sodales dolor. Phasellus vel aliquam lorem. Suspendisse vel augue vitae velit faucibus iaculis. Quisque ullamcorper tortor risus, blandit venenatis sapien vulputate sed. Duis molestie tortor dictum ultricies pharetra. Morbi eu interdum ex, ac pellentesque metus.</p>
+
+          <p>Proin vel consectetur ipsum. Sed eget faucibus elit. Pellentesque nisl eros, fringilla ac nibh sed, dictum dapibus odio. Integer varius velit purus, quis blandit diam tristique ut. Donec nisi nisi, hendrerit quis nulla non, fermentum accumsan nisl. Praesent ullamcorper, nisi vel molestie fermentum, ex ante volutpat urna, vel euismod quam nisi a velit. Vestibulum a vulputate nisl. Aenean a porta purus. Sed vehicula vehicula maximus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vehicula orci ac sem lacinia, eget elementum felis ultrices. Integer id viverra orci, interdum hendrerit elit. Proin bibendum ipsum lectus, eu ullamcorper nibh vulputate vehicula. Nunc lacus magna, vehicula in mauris at, fermentum lobortis nulla. Praesent quis orci quis enim varius faucibus.</p>
+
+          <p>Pellentesque auctor ut magna ultricies faucibus. Phasellus ut metus rhoncus, malesuada elit in, imperdiet ipsum. Aliquam vitae molestie orci. Cras vulputate, enim vel consequat semper, velit mi efficitur nunc, sed fermentum lorem dolor eget elit. Duis vel vestibulum augue. Cras sit amet eros ut diam tincidunt varius. Donec bibendum semper euismod. Fusce imperdiet aliquam tincidunt.</p>
+
+          <p>Cras vehicula elit eget enim consequat hendrerit. Suspendisse ac maximus nibh. Sed est elit, tincidunt imperdiet auctor et, pretium vel nibh. Pellentesque eget euismod justo, quis congue dolor. Aliquam imperdiet venenatis nulla, in fringilla mauris condimentum a. Suspendisse aliquam ante enim, vitae volutpat sem tristique luctus. Nulla pharetra non nisl non congue. Suspendisse accumsan, nisl ut sagittis tristique, lacus neque tincidunt quam, sed cursus nulla libero eu tellus. In a leo hendrerit, tincidunt enim vel, accumsan massa. Sed ac rutrum mauris, vel placerat odio. In porta enim vel viverra venenatis. Proin pretium euismod odio nec sodales. In gravida dictum feugiat. Duis semper volutpat elit, a condimentum tortor sollicitudin quis. Vestibulum scelerisque quam odio, non eleifend dui dictum eu.</p>
+
+          <p>Sed mi sem, vehicula fringilla tempus non, vehicula non nunc. Sed scelerisque augue ex, non semper magna convallis ac. Maecenas quis turpis dui. Nullam tincidunt ornare quam sed molestie. Phasellus ac dui cursus, lacinia est id, luctus massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut sed dictum purus, sed vestibulum odio. In nec cursus quam. Donec maximus placerat massa, vel tempor risus feugiat sed. Duis hendrerit pretium nunc a pulvinar.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" name="decline" class="btn btn-danger" data-dismiss="modal">Decline</button>
+          <button type="button" name="agree" class="btn btn-default" data-dismiss="modal">Agree</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="success">
+  <h1>Successfully Registered!</h1>
+  <h5>Redirecting you...</h5>
 </template>

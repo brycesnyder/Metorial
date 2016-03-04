@@ -8,20 +8,38 @@ if (Meteor.isClient) {
     }
   });
 
-  FlowRouter.route('/:token', {
+  FlowRouter.route('/company/:token', {
     name: 'company',
     action: function(params, queryParams) {
       BlazeLayout.render('main', {
-        content: 'companyInfo'
+        content: 'company'
       });
     }
   });
 
-  FlowRouter.route('/register/:token', {
+  FlowRouter.route('/company/register/:token', {
     name: 'register',
     action: function(params, queryParams) {
       BlazeLayout.render('main', {
         content: 'register'
+      });
+    }
+  });
+
+  FlowRouter.route('/company/register/:token/success', {
+    name: 'success',
+    action: function(params, queryParams) {
+      BlazeLayout.render('main', {
+        content: 'success'
+      });
+    }
+  });
+
+  FlowRouter.route('/company/update/:token', {
+    name: 'success',
+    action: function(params, queryParams) {
+      BlazeLayout.render('main', {
+        content: 'update'
       });
     }
   });

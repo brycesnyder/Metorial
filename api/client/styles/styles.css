@@ -7,6 +7,18 @@
   user-select: none;
 }*/
 
-.company {
-  cursor: pointer;
+.modal-body {
+  max-height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
+
+.name .glyphicon {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.glyphicon-ok { color: #4CAF50; }
+.glyphicon-remove { color: #E91E63; }
+
+.company { cursor: pointer; }
