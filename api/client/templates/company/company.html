@@ -1,0 +1,55 @@
+<template name="company">
+  {{> export}}
+  <a href="/companies" class="back">Back</a>
+  <h3>Company Info</h3>
+  {{#if Template.subscriptionsReady}}
+    <table class="table table-bordered table-striped">
+      <tbody>
+        {{#with company}}
+          <tr>
+            <th>Company Name</th>
+            <td>{{name}}</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>{{addressLine1}} {{addressLine2}} <br> {{city}}, {{province}} {{postalCode}}<br> {{country}}</td>
+          </tr>
+          <tr>
+            <th>Contact Name</th>
+            <td>{{contactName}}</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>{{contactEmail}}</td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>{{contactPhone}}</td>
+          </tr>
+          <tr>
+            <th>Serial Number</th>
+            <td>{{serial}}</td>
+          </tr>
+          <tr>
+            <th>Active</th>
+            <td><span class="glyphicon glyphicon-{{state}}"></span></td>
+          </tr>
+          <tr>
+            <th>Activation Date</th>
+            <td>{{registeredAt}}</td>
+          </tr>
+          <tr>
+            <th>Renewal Date</th>
+            <td>{{renewalDate}}</td>
+          </tr>
+          <tr>
+            <th>Distributor ID</th>
+            <td>{{distID}}</td>
+          </tr>
+        {{/with}}
+      </tbody>
+    </table>
+  {{else}}
+    <p>Loading...</p>
+  {{/if}}
+</template>

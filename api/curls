@@ -1,4 +1,167 @@
-curl -H "Content-Type: application/json" -X POST -d '[{"name":"Photojam","addressLine1":"9 Sunfield Alley","city":"Pokhvistnevo","contactName":"Sandra Reed","contactEmail":"sreed0@1688.com","contactPhone":"7-(812)639-0510","token":"14wfdXVVspBE7HRuvpfihUS6CLDsQYajwW","active":true},{"name":"Dynabox","addressLine1":"5413 Maple Terrace","city":"Santa Cruz do Bispo","province":"Porto","postalCode":"4455-794","contactName":"Louis Ramos","contactEmail":"lramos1@bluehost.com","contactPhone":"351-(716)948-5769","token":"1G5EZBeDTC6GriVpzRMs8jmgeD7mgbZpVz","active":false},{"name":"Meevee","addressLine1":"4343 Cambridge Plaza","city":"Baisha","contactName":"Lisa Berry","contactEmail":"lberry2@trellian.com","contactPhone":"86-(591)606-4965","token":"13KHPb7aaTeW1sKF5NCy2eY2Pa1pZDX1hG","active":true},{"name":"Kamba","addressLine1":"979 Jay Junction","city":"Usevia","contactName":"Cheryl Fields","contactEmail":"cfields3@altervista.org","contactPhone":"255-(269)307-6068","token":"1JYckm5STjM3FjyqCM8G1j885yST26wL17","active":false},{"name":"Voomm","addressLine1":"74 Shelley Road","city":"Cincinnati","province":"Ohio","postalCode":"45208","contactName":"Elizabeth Ramos","contactEmail":"eramos4@webmd.com","contactPhone":"1-(513)362-0101","token":"1AWyNmjFXMYq47S9NkHVpRYRyP6BnSSJ3M","active":true},{"name":"Realcube","addressLine1":"4 American Street","city":"Lüyang","contactName":"Jane King","contactEmail":"jking5@adobe.com","contactPhone":"86-(834)159-4065","token":"16ep2jgHfsdmMUbcrwVUA5Hn8bWFSQPY7d","active":false},{"name":"Jamia","addressLine1":"88 Dawn Street","city":"Xiatuanpu","contactName":"Barbara Diaz","contactEmail":"bdiaz6@indiegogo.com","contactPhone":"86-(627)599-6147","token":"1LF272Z2ciFQ7twRZLR1C6Mp3wDEZova6X","active":false},{"name":"Pixope","addressLine1":"76456 Service Plaza","city":"Amsterdam Nieuw West","province":"Provincie Noord-Holland","postalCode":"1069","contactName":"Jean Burns","contactEmail":"jburns7@theglobeandmail.com","contactPhone":"31-(412)953-1447","token":"1HTWMUkP4XXFMJhZq8vnUZhWukFsmTc1jL","active":true},{"name":"Babblestorm","addressLine1":"558 Carioca Avenue","city":"Pedaringan","contactName":"Margaret Graham","contactEmail":"mgraham8@utexas.edu","contactPhone":"62-(745)165-0938","token":"19fTMRtk97ctXAoiUNSmVTNVesr4Xrg6Ru","active":true},{"name":"Abatz","addressLine1":"06 Swallow Junction","city":"Kholbon","contactName":"Debra Butler","contactEmail":"dbutler9@usda.gov","contactPhone":"7-(372)693-1594","token":"1D1q2pZELErNyYAxWK9URozze5xKkYP6f6","active":false},{"name":"Thoughtstorm","addressLine1":"22 Huxley Hill","city":"Tombatu","contactName":"Julie Cole","contactEmail":"jcolea@behance.net","contactPhone":"62-(101)397-5538","token":"1GHhgvfEwVtHvr9YiTqmUMMpuvGtFasTYo","active":false},{"name":"Youbridge","addressLine1":"7343 Vidon Alley","city":"‘Eilabun","contactName":"Lillian Wagner","contactEmail":"lwagnerb@vkontakte.ru","contactPhone":"972-(225)730-3801","token":"1LzAPmVCuiZNb1YhU35J2QCjy6a4SS1Q1Z","active":false},{"name":"JumpXS","addressLine1":"8 Thompson Circle","city":"Mogi das Cruzes","contactName":"Justin Fox","contactEmail":"jfoxc@hud.gov","contactPhone":"55-(278)239-6090","token":"1JAhorN5PkGt5aLLfV2SH1Ph3BjKpWJ8r6","active":false},{"name":"Skinder","addressLine1":"220 Corben Plaza","city":"Zarqa","contactName":"Charles Parker","contactEmail":"cparkerd@ibm.com","contactPhone":"962-(663)968-7700","token":"186fe2mAXP5CLMaXZaTMpdJAq36WrGAat","active":true},{"name":"BlogXS","addressLine1":"58430 Redwing Trail","city":"Khlong Khuean","contactName":"Catherine Gibson","contactEmail":"cgibsone@free.fr","contactPhone":"66-(969)545-5711","token":"14k65VWY4JMuKCqds2uN25kHF61XM6qpew","active":false}]' http://localhost:3000/api/companies
+curl -H "Content-Type: application/json" -X POST -d '' http://localhost:3000/api/companies
 
 
-curl -H "Content-Type: application/json" -X POST -d '[{"token":"1CsEBJJfz1EQewgnakUSDEB9mPNY6fBSv1"},{"token":"1AxwHTEwTSLHaGYXY8xoJUid3zVjqfoK4Z"},{"token":"1LYTptkpvh5V6ZEUJbt8TP3Nt2EeD3RcAX"},{"token":"18aX67iRLMEyYYXhi2MhACguT4kr1z15rX"},{"token":"1PX9xxoVzoZk581KeJKMc5BSJf9uPyXWBe"},{"token":"17hP5RWhNoDVgB9o95F2XqnxMkfxwZ8Hcy"},{"token":"1CaCzCk3vxA6ztayHTC66SKrnALDAQL6HK"},{"token":"1M5hEmcuy4hcsVGX2FNHkMYVetV5L7MPTh"},{"token":"1GKsbE6UmyMyArsggoMHmFs8WTJuFBbjUM"},{"token":"1KSUdWtdhbx5Bt18BTCR9JEhp5nbD8mKQW"}]' http://localhost:3000/api/companies
+curl -H "Content-Type: application/json" -X POST -d '[{"serial":"1EyyiUA9J1hGvLJfZEBiEhePbrv18SJxTc","distID":"0268-6777"},{"serial":"18dMVcrj58vAyceTCw7JpP55syQmCKK7fN","distID":"53808-0730"},{"serial":"1M3L9pHFi853bbe3tQnmbhBkn9qUybFnrR","distID":"41250-361"},{"serial":"18R6B58XrcKjMqfHF1n8qbQRTjGhMnvvUn","distID":"0113-0340"},{"serial":"1CbXPacyEp4FAPewYfM77fLYBP5cLhpcaH","distID":"68016-283"},{"serial":"1G6Z7ohbpz9TP7jB7m2gY3fettbGpS2xhd","distID":"49967-295"},{"serial":"1HmyKuuEMZu8gPZ6EXy8AtDT1ocijJek9X","distID":"16590-528"},{"serial":"1FTkiv8BXrE1X4Gu9NW37eXuQXdb2pAAhH","distID":"61767-002"},{"serial":"1HKwuLVBaKHCaQzh6L57eb44Hh1SGfJ3DP","distID":"47682-934"},{"serial":"1KWp9cSFEhn5uPFWcPnBfNb6gZh1WBL5DF","distID":"0781-1438"},{"serial":"12n3gnN1aZvTj76TPHDZs45yiKQhJGvK2h","name":"Thoughtbeat","addressLine1":"76206 Valley Edge Point","city":"Gubat","country":"Philippines","contactName":"Anna Olson","contactEmail":"aolson0@baidu.com","contactPhone":"63-(420)487-0715","active":false,"renewalDate":"21/08/2015","activationDate":"14/09/2015","distID":"14783-243"},{"serial":"1CqP1zFBXBNmj73FBqfC51JwanAVDriWVN","name":"Feedmix","addressLine1":"339 3rd Pass","city":"Habartov","country":"Czech Republic","contactName":"Johnny Richards","contactEmail":"jrichards1@ted.com","contactPhone":"420-(911)536-2070","active":true,"renewalDate":"13/04/2015","activationDate":"15/06/2015","distID":"21695-354"},{"serial":"14wewPfbZo9TEGN5GyyzDNC3qFi3j9QA6J","name":"Shufflebeat","addressLine1":"7225 Mendota Alley","city":"Lipka","country":"Poland","contactName":"Andrea Warren","contactEmail":"awarren2@zdnet.com","contactPhone":"48-(837)215-5474","active":true,"renewalDate":"13/10/2015","activationDate":"01/12/2015","distID":"63304-789"},{"serial":"12FrYC6dReFQc8mkVaWbuGhX3f8E2jVuZ4","name":"Devcast","addressLine1":"63095 Pawling Center","city":"Panambi","country":"Brazil","contactName":"Mary George","contactEmail":"mgeorge3@fotki.com","contactPhone":"55-(646)965-7087","active":true,"renewalDate":"31/05/2015","activationDate":"30/11/2015","distID":"36987-2690"},{"serial":"19wXfTg35TgHjDq7zNLJftnHcNz4RaxCE8","name":"Shuffledrive","addressLine1":"95 Oak Way","city":"Xialiao","country":"China","contactName":"Sarah Ellis","contactEmail":"sellis4@eventbrite.com","contactPhone":"86-(883)890-0155","active":false,"renewalDate":"11/05/2015","activationDate":"28/01/2016","distID":"10526-002"},{"serial":"1AMavn7uuG6vjsyx3G87MAourVsujhvorD","name":"Fivespan","addressLine1":"79847 Mockingbird Circle","city":"Huangsha","country":"China","contactName":"Pamela Flores","contactEmail":"pflores5@deviantart.com","contactPhone":"86-(540)325-7053","active":true,"renewalDate":"24/01/2016","activationDate":"25/03/2015","distID":"60913-018"},{"serial":"1JzASETA534SsB6udpjMQHQkPnAuApujbc","name":"Zoombeat","addressLine1":"8 Melvin Trail","city":"La Paz","country":"Philippines","contactName":"Martha Moore","contactEmail":"mmoore6@ft.com","contactPhone":"63-(110)685-2539","active":true,"renewalDate":"27/04/2015","activationDate":"15/06/2015","distID":"0268-1178"},{"serial":"1NZ5J94Z8rpDRk1AejMC3FnsEQBPJPRntV","name":"Kwinu","addressLine1":"33 Petterle Plaza","city":"Gremyachinsk","country":"Russia","contactName":"Ruby Hudson","contactEmail":"rhudson7@cafepress.com","contactPhone":"7-(182)343-0197","active":false,"renewalDate":"15/07/2015","activationDate":"25/11/2015","distID":"50353-102"},{"serial":"1PP6krgBQWdAJPR9DKW3iGhDQ5125iQPHG","name":"Fadeo","addressLine1":"28301 Haas Alley","city":"Sade","country":"Nigeria","contactName":"Annie Larson","contactEmail":"alarson8@comcast.net","contactPhone":"234-(682)844-3842","active":true,"renewalDate":"03/12/2015","activationDate":"28/08/2015","distID":"76439-225"},{"serial":"184HWXnNNbgudvQ6hAQFnkdgSXvtmtxfEY","name":"Skimia","addressLine1":"3389 Lakewood Gardens Point","city":"Ustrzyki Dolne","country":"Poland","contactName":"Eric Marshall","contactEmail":"emarshall9@cyberchimps.com","contactPhone":"48-(219)684-4677","active":true,"renewalDate":"24/08/2015","activationDate":"24/02/2016","distID":"49288-0730"}]' http://localhost:3000/api/companies
+
+
+[{
+  "serial": "1EyyiUA9J1hGvLJfZEBiEhePbrv18SJxTc",
+  "distID": "0268-6777"
+}, {
+  "serial": "18dMVcrj58vAyceTCw7JpP55syQmCKK7fN",
+  "distID": "53808-0730"
+}, {
+  "serial": "1M3L9pHFi853bbe3tQnmbhBkn9qUybFnrR",
+  "distID": "41250-361"
+}, {
+  "serial": "18R6B58XrcKjMqfHF1n8qbQRTjGhMnvvUn",
+  "distID": "0113-0340"
+}, {
+  "serial": "1CbXPacyEp4FAPewYfM77fLYBP5cLhpcaH",
+  "distID": "68016-283"
+}, {
+  "serial": "1G6Z7ohbpz9TP7jB7m2gY3fettbGpS2xhd",
+  "distID": "49967-295"
+}, {
+  "serial": "1HmyKuuEMZu8gPZ6EXy8AtDT1ocijJek9X",
+  "distID": "16590-528"
+}, {
+  "serial": "1FTkiv8BXrE1X4Gu9NW37eXuQXdb2pAAhH",
+  "distID": "61767-002"
+}, {
+  "serial": "1HKwuLVBaKHCaQzh6L57eb44Hh1SGfJ3DP",
+  "distID": "47682-934"
+}, {
+  "serial": "1KWp9cSFEhn5uPFWcPnBfNb6gZh1WBL5DF",
+  "distID": "0781-1438"
+}, {
+  "serial": "12n3gnN1aZvTj76TPHDZs45yiKQhJGvK2h",
+  "name": "Thoughtbeat",
+  "addressLine1": "76206 Valley Edge Point",
+  "city": "Gubat",
+  "country": "Philippines",
+  "contactName": "Anna Olson",
+  "contactEmail": "aolson0@baidu.com",
+  "contactPhone": "63-(420)487-0715",
+  "active": false,
+  "renewalDate": "21/08/2015",
+  "activationDate": "14/09/2015",
+  "distID": "14783-243"
+}, {
+  "serial": "1CqP1zFBXBNmj73FBqfC51JwanAVDriWVN",
+  "name": "Feedmix",
+  "addressLine1": "339 3rd Pass",
+  "city": "Habartov",
+  "country": "Czech Republic",
+  "contactName": "Johnny Richards",
+  "contactEmail": "jrichards1@ted.com",
+  "contactPhone": "420-(911)536-2070",
+  "active": true,
+  "renewalDate": "13/04/2015",
+  "activationDate": "15/06/2015",
+  "distID": "21695-354"
+}, {
+  "serial": "14wewPfbZo9TEGN5GyyzDNC3qFi3j9QA6J",
+  "name": "Shufflebeat",
+  "addressLine1": "7225 Mendota Alley",
+  "city": "Lipka",
+  "country": "Poland",
+  "contactName": "Andrea Warren",
+  "contactEmail": "awarren2@zdnet.com",
+  "contactPhone": "48-(837)215-5474",
+  "active": true,
+  "renewalDate": "13/10/2015",
+  "activationDate": "01/12/2015",
+  "distID": "63304-789"
+}, {
+  "serial": "12FrYC6dReFQc8mkVaWbuGhX3f8E2jVuZ4",
+  "name": "Devcast",
+  "addressLine1": "63095 Pawling Center",
+  "city": "Panambi",
+  "country": "Brazil",
+  "contactName": "Mary George",
+  "contactEmail": "mgeorge3@fotki.com",
+  "contactPhone": "55-(646)965-7087",
+  "active": true,
+  "renewalDate": "31/05/2015",
+  "activationDate": "30/11/2015",
+  "distID": "36987-2690"
+}, {
+  "serial": "19wXfTg35TgHjDq7zNLJftnHcNz4RaxCE8",
+  "name": "Shuffledrive",
+  "addressLine1": "95 Oak Way",
+  "city": "Xialiao",
+  "country": "China",
+  "contactName": "Sarah Ellis",
+  "contactEmail": "sellis4@eventbrite.com",
+  "contactPhone": "86-(883)890-0155",
+  "active": false,
+  "renewalDate": "11/05/2015",
+  "activationDate": "28/01/2016",
+  "distID": "10526-002"
+}, {
+  "serial": "1AMavn7uuG6vjsyx3G87MAourVsujhvorD",
+  "name": "Fivespan",
+  "addressLine1": "79847 Mockingbird Circle",
+  "city": "Huangsha",
+  "country": "China",
+  "contactName": "Pamela Flores",
+  "contactEmail": "pflores5@deviantart.com",
+  "contactPhone": "86-(540)325-7053",
+  "active": true,
+  "renewalDate": "24/01/2016",
+  "activationDate": "25/03/2015",
+  "distID": "60913-018"
+}, {
+  "serial": "1JzASETA534SsB6udpjMQHQkPnAuApujbc",
+  "name": "Zoombeat",
+  "addressLine1": "8 Melvin Trail",
+  "city": "La Paz",
+  "country": "Philippines",
+  "contactName": "Martha Moore",
+  "contactEmail": "mmoore6@ft.com",
+  "contactPhone": "63-(110)685-2539",
+  "active": true,
+  "renewalDate": "27/04/2015",
+  "activationDate": "15/06/2015",
+  "distID": "0268-1178"
+}, {
+  "serial": "1NZ5J94Z8rpDRk1AejMC3FnsEQBPJPRntV",
+  "name": "Kwinu",
+  "addressLine1": "33 Petterle Plaza",
+  "city": "Gremyachinsk",
+  "country": "Russia",
+  "contactName": "Ruby Hudson",
+  "contactEmail": "rhudson7@cafepress.com",
+  "contactPhone": "7-(182)343-0197",
+  "active": false,
+  "renewalDate": "15/07/2015",
+  "activationDate": "25/11/2015",
+  "distID": "50353-102"
+}, {
+  "serial": "1PP6krgBQWdAJPR9DKW3iGhDQ5125iQPHG",
+  "name": "Fadeo",
+  "addressLine1": "28301 Haas Alley",
+  "city": "Sade",
+  "country": "Nigeria",
+  "contactName": "Annie Larson",
+  "contactEmail": "alarson8@comcast.net",
+  "contactPhone": "234-(682)844-3842",
+  "active": true,
+  "renewalDate": "03/12/2015",
+  "activationDate": "28/08/2015",
+  "distID": "76439-225"
+}, {
+  "serial": "184HWXnNNbgudvQ6hAQFnkdgSXvtmtxfEY",
+  "name": "Skimia",
+  "addressLine1": "3389 Lakewood Gardens Point",
+  "city": "Ustrzyki Dolne",
+  "country": "Poland",
+  "contactName": "Eric Marshall",
+  "contactEmail": "emarshall9@cyberchimps.com",
+  "contactPhone": "48-(219)684-4677",
+  "active": true,
+  "renewalDate": "24/08/2015",
+  "activationDate": "24/02/2016",
+  "distID": "49288-0730"
+}]

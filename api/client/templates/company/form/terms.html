@@ -1,72 +1,3 @@
-<template name="register">
-  {{> registerForm}}
-</template>
-
-<template name="registerForm">
-  {{#with company}}
-    <div class="panel panel-default">
-      <form class="register panel-body">
-        <legend>Company Info</legend>
-        <div class="form-group">
-          <label for="name" class="control-label">Name</label>
-          <input type="text" name="name" id="name" class="form-control" value="{{name}}" required />
-        </div><!-- /.form-group -->
-        <div class="form-group row">
-          <div class="col-sm-8">
-            <label for="addressLine1" class="control-label">Address Line 1</label>
-            <input type="text" name="addressLine1" id="addressLine1" class="form-control" placeholder="Street address, P.O box, company name, c/o" value="{{addressLine1}}" required />
-          </div><!-- /.col -->
-          <div class="col-sm-4">
-            <label for="addressLine2" class="control-label">Address Line 2</label>
-            <input type="text" name="addressLine2" id="addressLine2" class="form-control" placeholder="Apartment, suite, etc." value="{{addressLine2}}"/>
-          </div><!-- /.col -->
-        </div><!-- /.form-group -->
-        <div class="form-group row">
-          <div class="col-sm-6">
-            <label for="city" class="control-label">City / Town</label>
-            <input type="text" name="city" id="city" class="form-control" value="{{city}}" required />
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <label for="province" class="control-label">State / Province / Region</label>
-            <input type="text" name="province" id="province" class="form-control" value="{{province}}" required />
-          </div><!-- /.col -->
-        </div><!-- /.form-group -->
-        <div class="form-group row">
-        <div class="col-sm-6">
-          <label for="postalCode" class="control-label">ZIP / Postal Code</label>
-          <input type="text" name="postalCode" id="postalCode" class="form-control" value="{{postalCode}}" required />
-        </div><!-- /.col -->
-          <div class="col-sm-6">
-            <label for="country" class="control-label">Country</label>
-            <select class="form-control" name="country" id="country" value="{{country}}" required>
-              <option value="" selected disabled>---</option>
-              <option value="canada">Canada</option>
-              <option value="china">China</option>
-            </select>
-          </div><!-- /.col -->
-        </div><!-- /.form-group -->
-        <legend>Contact Info</legend>
-        <div class="form-group">
-          <label for="contactName" class="control-label">Name</label>
-          <input type="text" name="contactName" id="contactName" class="form-control" value="{{contactName}}" required />
-        </div><!-- /.form-group -->
-        <div class="form-group row">
-          <div class="col-sm-6">
-            <label for="contactEmail" class="control-label">Email</label>
-            <input type="email" name="contactEmail" id="contactEmail" class="form-control" value="{{contactEmail}}" required />
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <label for="contactPhone" class="control-label">Phone</label>
-            <input type="phone" name="contactPhone" id="contactPhone" class="form-control" value="{{contactPhone}}" required />
-          </div><!-- /.col -->
-        </div><!-- /.form-group -->
-        <button type="submit" name="submit" class="btn btn-primary pull-right">Submit</button>
-      </form>
-    </div><!-- /.panel -->
-  {{/with}}
-  {{> terms}}
-</template>
-
 <template name="terms">
   <div id="terms" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -92,9 +23,4 @@
       </div>
     </div>
   </div>
-</template>
-
-<template name="success">
-  <h1>Successfully Registered!</h1>
-  <h5>Redirecting you...</h5>
 </template>

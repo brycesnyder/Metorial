@@ -3,12 +3,20 @@ if (Meteor.isClient) {
   FlowRouter.route('/', {
     action: function() {
       BlazeLayout.render('main', {
+        content: 'login'
+      });
+    }
+  });
+
+  FlowRouter.route('/companies', {
+    action: function() {
+      BlazeLayout.render('main', {
         content: 'companies'
       });
     }
   });
 
-  FlowRouter.route('/company/:token', {
+  FlowRouter.route('/company/:serial', {
     name: 'company',
     action: function(params, queryParams) {
       BlazeLayout.render('main', {
@@ -17,7 +25,7 @@ if (Meteor.isClient) {
     }
   });
 
-  FlowRouter.route('/company/register/:token', {
+  FlowRouter.route('/company/register/:serial', {
     name: 'register',
     action: function(params, queryParams) {
       BlazeLayout.render('main', {
@@ -26,7 +34,7 @@ if (Meteor.isClient) {
     }
   });
 
-  FlowRouter.route('/company/register/:token/success', {
+  FlowRouter.route('/company/register/:serial/success', {
     name: 'success',
     action: function(params, queryParams) {
       BlazeLayout.render('main', {
@@ -35,8 +43,8 @@ if (Meteor.isClient) {
     }
   });
 
-  FlowRouter.route('/company/update/:token', {
-    name: 'success',
+  FlowRouter.route('/company/update/:serial', {
+    name: 'update',
     action: function(params, queryParams) {
       BlazeLayout.render('main', {
         content: 'update'

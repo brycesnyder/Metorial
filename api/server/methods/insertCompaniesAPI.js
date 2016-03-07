@@ -12,7 +12,7 @@ if (Meteor.isServer) {
       post: {
         authRequired: false,
         action: function(error) {
-          var data = this.bodyParams; // NOT sanitized.
+          var data = this.bodyParams; // TODO NOT sanitized.
           Companies.batchInsert(data);
           if (error) {
             return {

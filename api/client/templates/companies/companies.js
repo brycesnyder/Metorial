@@ -9,6 +9,13 @@ if (Meteor.isClient) {
   Template.companies.helpers({
     'companies': function() {
       return Companies.find({}, { sort: { name: Session.get('sortOrder') }});
+    },
+    'state': function() {
+      if (this.active) {
+        return "ok";
+      } else {
+        return "remove";
+      }
     }
   });
 
@@ -22,47 +29,12 @@ if (Meteor.isClient) {
     },
     'click .company': function() {
       var company = this;
-      FlowRouter.go('/company/:token', { token: company.token });
-    }
-    /* companyUrl: function() {
-      var company = this;
-      var params = {
-          category: company.category,
-          companyId: company._id
-      };
-      var routeName = "company";
-      var path = FlowRouter.path(routeName, params, {});
-      return path;
-    } */
-  });
-
-  Template.company.onCreated(function() {
-    var self = this;
-    self.autorun(function() {
-      var token = FlowRouter.getParam('token');
-      self.subscribe('company', token);
-    });
-  });
-
-  Template.company.helpers({
-    company: function() {
-      var token = FlowRouter.getParam('token');
-      var company = Companies.findOne({ token: token }) || {};
-      Session.set('companyId', company._id);
-      return company;
+      FlowRouter.go('/company/:serial', { serial: company.serial });
     },
-    'state': function() {
-      if (this.active) {
-        return "ok";
-      } else {
-        return "remove";
-      }
-    }
-  });
-
-  Template.company.events({
-    'click .export': function() {
-      Export.directory(Session.get('companyId'));
+    'click .logout': function(e) {
+      e.preventDefault();
+      Meteor.logout();
+      FlowRouter.go('/');
     }
   });
 

@@ -11,10 +11,11 @@ if (Meteor.isServer) {
     'contactName',
     'contactEmail',
     'contactPhone',
-    'token',
-    //'distributor_id',
+    'serial',
     'active',
-    'registeredAt'
+    'activationDate',
+    'renewalDate',
+    'distID'
   ];
 
   Meteor.methods({
@@ -28,10 +29,10 @@ if (Meteor.isServer) {
         company.contactName,
         company.contactEmail,
         company.contactPhone,
-        company.token,
-        //company.distributor_id,
+        company.serial,
+        company.distID,
         company.active,
-        moment.utc(company.registeredAt).format('DD/MM/YYYY')
+        moment.utc(company.activationDate).format('DD/MM/YYYY')
       ]);
     },
     export: function(id) {

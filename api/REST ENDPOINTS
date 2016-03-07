@@ -1,0 +1,7 @@
+/ - login form
+/companies - from login form
+/company/:token - specific company specified by company selection on companies directory
+/company/register/:token - registration of company based on provided token TODO this needs to be validated that it only worked with a previously populated companyId
+/company/register/:token/success - confirmation of registration with a redirect to browser
+/company/update/:token - update of pre-existing company.
+/company/update/:token/success - confirmation of update with a redirect to browser
