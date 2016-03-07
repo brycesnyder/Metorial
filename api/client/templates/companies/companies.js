@@ -23,6 +23,11 @@ if (Meteor.isClient) {
     'click .export': function() {
       Export.directory();
     },
+    'click .export-company': function(e) {
+      e.stopPropagation();
+      console.log(this);
+      Export.directory(this._id);
+    },
     'click th.name': function() {
       Session.set('sortOrder', (Session.get('sortOrder') === -1) ? 1 : -1);
       $('.glyphicon').toggleClass('glyphicon-chevron-up glyphicon-chevron-down');

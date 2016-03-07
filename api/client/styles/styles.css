@@ -22,3 +22,17 @@
 .glyphicon-remove { color: #E91E63; }
 
 .company { cursor: pointer; }
+
+.companies.table > thead > tr > td,
+.companies.table > tbody > tr > td,
+.companies.table > tfoot > tr > td {
+  vertical-align: middle;
+}
+.companies th:last-child,
+.companies th:nth-last-child(2) {
+  width: 50px;
+  text-align: center;
+}
+.companies td:nth-last-child(2) {
+  text-align: center;
+}

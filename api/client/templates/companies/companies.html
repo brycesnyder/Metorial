@@ -4,12 +4,13 @@
     <a href="#" class="logout">Logout</a>
   </div>
   <h3>Company Directory</h3>
-  <table class="table table-hover table-bordered table-condensed panel-body">
+  <table class="companies table table-hover table-bordered table-condensed panel-body">
     <thead>
       <tr>
         <th class="name">Name <span class="glyphicon glyphicon-chevron-up"></span></th>
           <th>Serial Number</th>
           <th>Active</th>
+          <th>Export</th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
           <td>{{name}}</td>
           <td>{{serial}}</td>
           <td><span class="glyphicon glyphicon-{{state}}"></span></td>
+          <td><button class="btn btn-success btn-sm export-company">Export</button></td>
         </tr>
       {{/each}}
     </tbody>

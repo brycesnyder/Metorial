@@ -2,7 +2,7 @@ Template.company.onCreated(function() {
   var self = this;
   self.autorun(function() {
     var serial = FlowRouter.getParam('serial');
-    self.subscribe('company', serial);
+    self.subscribe('serial', serial);
   });
 });
 
@@ -31,5 +31,11 @@ Template.company.helpers({
 Template.company.events({
   'click .export': function() {
     Export.directory(Session.get('companyId'));
+  },
+  'click .update': function(e) {
+    e.preventDefault();
+    FlowRouter.go('/company/update/:serial', {
+      serial: FlowRouter.getParam('serial')
+    });
   }
 });
