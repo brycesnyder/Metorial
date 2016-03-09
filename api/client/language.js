@@ -22,4 +22,4 @@ getUserLanguage = function () {
   return lang;
 };
 
-// TAPi18n.setLanguage(getUserLanguage());
+TAPi18n.setLanguage(getUserLanguage());
