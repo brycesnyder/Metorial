@@ -1,0 +1,16 @@
+{
+  "address-line-1": "地址第一行",
+  "address-line-2": "地址第二行",
+  "apartment": "公寓",
+  "city": "市",
+  "company-info": "公司信息",
+  "country": "国家",
+  "contact-info": "联系方式",
+  "email": "邮件",
+  "name": "名字",
+  "phone": "电话",
+  "postal-code": "邮编",
+  "street": "街道",
+  "state": "省",
+  "submit": "提交"
+}

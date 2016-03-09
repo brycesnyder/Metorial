@@ -47,7 +47,7 @@ if (Meteor.isClient) {
     name: 'update',
     action: function(params, queryParams) {
       BlazeLayout.render('main', {
-        content: 'update'
+        content: 'register'
       });
     }
   });

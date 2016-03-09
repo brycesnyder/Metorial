@@ -26,3 +26,5 @@ kadira:flow-router
 kadira:blaze-layout
 themeteorchef:jquery-validation
 accounts-password
+sacha:spin
+tap:i18n

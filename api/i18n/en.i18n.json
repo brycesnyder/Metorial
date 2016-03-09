@@ -1,0 +1,16 @@
+{
+  "address-line-1": "Address Line 1",
+  "address-line-2": "Address Line 2",
+  "apartment": "Apartment, suite, etc.",
+  "city": "City / Town",
+  "company-info": "Company Info",
+  "country": "Country",
+  "contact-info": "Contact Info",
+  "email": "Email",
+  "name": "Name",
+  "phone": "Phone",
+  "postal-code": "ZIP / Postal Code",
+  "street": "Street address, P.O box, company name, c/o",
+  "state": "State / Province / Region",
+  "submit": "Submit"
+}

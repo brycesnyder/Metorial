@@ -7,17 +7,17 @@
   <table class="companies table table-hover table-bordered table-condensed panel-body">
     <thead>
       <tr>
+        <th>Serial Number</th>
         <th class="name">Name <span class="glyphicon glyphicon-chevron-up"></span></th>
-          <th>Serial Number</th>
-          <th>Active</th>
-          <th>Export</th>
+        <th>Active</th>
+        <th>Export</th>
       </tr>
     </thead>
     <tbody>
       {{#each companies}}
         <tr class="company">
-          <td>{{name}}</td>
           <td>{{serial}}</td>
+          <td>{{name}}</td>
           <td><span class="glyphicon glyphicon-{{state}}"></span></td>
           <td><button class="btn btn-success btn-sm export-company">Export</button></td>
         </tr>
